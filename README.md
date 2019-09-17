@@ -2,6 +2,9 @@
     <h1>UNED</h1>
 </p>
 
+Compilacion de practicas de ingenieria informatica de la Uned.
+Autor : Manuel Moreno
+
 ## PL1
 
 [PL1_2019](https://github.com/Faiiya/Uned/tree/master/PL1_2019)
