@@ -1,0 +1,9 @@
+# programa con operaciones
+programa cinco:
+comienzo
+	si (b < a) entonces:
+			escribir("a es mayor que b");
+	sino:
+			escribir("a y b son iguales");
+	fin si;
+fin.

@@ -1,0 +1,20 @@
+# programa con condicional
+programa siete:
+	constantes
+		a = 10;
+		b = 20;
+	
+comienzo
+
+	si a < b entonces:
+		escribir("b es mayor que a");
+	sino:
+		si (b < a) entonces:
+			escribir("a es mayor que b");
+		sino:
+			escribir("a y b son iguales");
+		fin si;
+	fin si;
+	
+
+fin.

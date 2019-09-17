@@ -1,0 +1,465 @@
+# Initializing parser
+# Current Symbol is #6
+# Reduce with prod #1 [NT=47, SZ=0]
+# Reduce rule: top state 0, lhs sym 47 -> state 2
+# Goto state #2
+# Shift under term #6 to state #5
+# Current token is Token - [Id =  20, lexema = 'cuatro', line = 2, column = 10]
+# Shift under term #20 to state #6
+# Current token is Token - [Id =  40, lexema = ':', line = 2, column = 16]
+# Shift under term #40 to state #11
+# Current token is Token - [Id =  36, lexema = 'constantes', line = 3, column = 2]
+# Reduce with prod #5 [NT=3, SZ=3]
+# Reduce rule: top state 2, lhs sym 3 -> state 3
+# Goto state #3
+# Reduce with prod #4 [NT=2, SZ=0]
+# Reduce rule: top state 3, lhs sym 2 -> state 13
+# Goto state #13
+# Reduce with prod #25 [NT=4, SZ=1]
+# Reduce rule: top state 3, lhs sym 4 -> state 12
+# Goto state #12
+# Shift under term #36 to state #19
+# Current token is Token - [Id =  20, lexema = 'a', line = 4, column = 3]
+# Shift under term #20 to state #149
+# Current token is Token - [Id =  45, lexema = '=', line = 4, column = 5]
+# Shift under term #45 to state #155
+# Current token is Token - [Id =  9, lexema = '10', line = 4, column = 7]
+# Shift under term #9 to state #156
+# Current token is Token - [Id =  41, lexema = ';', line = 4, column = 9]
+# Reduce with prod #32 [NT=7, SZ=3]
+# Reduce rule: top state 19, lhs sym 7 -> state 151
+# Goto state #151
+# Shift under term #41 to state #152
+# Current token is Token - [Id =  20, lexema = 'b', line = 5, column = 3]
+# Reduce with prod #31 [NT=6, SZ=2]
+# Reduce rule: top state 19, lhs sym 6 -> state 150
+# Goto state #150
+# Shift under term #20 to state #149
+# Current token is Token - [Id =  45, lexema = '=', line = 5, column = 5]
+# Shift under term #45 to state #155
+# Current token is Token - [Id =  9, lexema = '20', line = 5, column = 7]
+# Shift under term #9 to state #156
+# Current token is Token - [Id =  41, lexema = ';', line = 5, column = 9]
+# Reduce with prod #32 [NT=7, SZ=3]
+# Reduce rule: top state 150, lhs sym 7 -> state 153
+# Goto state #153
+# Shift under term #41 to state #154
+# Current token is Token - [Id =  23, lexema = 'variables', line = 6, column = 2]
+# Reduce with prod #30 [NT=6, SZ=3]
+# Reduce rule: top state 19, lhs sym 6 -> state 150
+# Goto state #150
+# Reduce with prod #26 [NT=5, SZ=2]
+# Reduce rule: top state 12, lhs sym 5 -> state 16
+# Goto state #16
+# Reduce with prod #24 [NT=4, SZ=2]
+# Reduce rule: top state 3, lhs sym 4 -> state 12
+# Goto state #12
+# Shift under term #23 to state #18
+# Current token is Token - [Id =  20, lexema = 'suma', line = 7, column = 3]
+# Shift under term #20 to state #158
+# Current token is Token - [Id =  40, lexema = ':', line = 7, column = 8]
+# Reduce with prod #4 [NT=2, SZ=0]
+# Reduce rule: top state 158, lhs sym 2 -> state 166
+# Goto state #166
+# Reduce with prod #73 [NT=33, SZ=1]
+# Reduce rule: top state 158, lhs sym 33 -> state 165
+# Goto state #165
+# Shift under term #40 to state #167
+# Current token is Token - [Id =  7, lexema = 'entero', line = 7, column = 10]
+# Shift under term #7 to state #171
+# Current token is Token - [Id =  41, lexema = ';', line = 7, column = 16]
+# Reduce with prod #95 [NT=12, SZ=1]
+# Reduce rule: top state 167, lhs sym 12 -> state 170
+# Goto state #170
+# Reduce with prod #40 [NT=11, SZ=4]
+# Reduce rule: top state 18, lhs sym 11 -> state 159
+# Goto state #159
+# Shift under term #41 to state #163
+# Current token is Token - [Id =  20, lexema = 'resultado', line = 8, column = 3]
+# Reduce with prod #39 [NT=10, SZ=2]
+# Reduce rule: top state 18, lhs sym 10 -> state 160
+# Goto state #160
+# Shift under term #20 to state #158
+# Current token is Token - [Id =  40, lexema = ':', line = 8, column = 13]
+# Reduce with prod #4 [NT=2, SZ=0]
+# Reduce rule: top state 158, lhs sym 2 -> state 166
+# Goto state #166
+# Reduce with prod #73 [NT=33, SZ=1]
+# Reduce rule: top state 158, lhs sym 33 -> state 165
+# Goto state #165
+# Shift under term #40 to state #167
+# Current token is Token - [Id =  7, lexema = 'entero', line = 8, column = 15]
+# Shift under term #7 to state #171
+# Current token is Token - [Id =  41, lexema = ';', line = 8, column = 21]
+# Reduce with prod #95 [NT=12, SZ=1]
+# Reduce rule: top state 167, lhs sym 12 -> state 170
+# Goto state #170
+# Reduce with prod #40 [NT=11, SZ=4]
+# Reduce rule: top state 160, lhs sym 11 -> state 161
+# Goto state #161
+# Shift under term #41 to state #162
+# Current token is Token - [Id =  20, lexema = 'conjuncion', line = 10, column = 3]
+# Reduce with prod #38 [NT=10, SZ=3]
+# Reduce rule: top state 18, lhs sym 10 -> state 160
+# Goto state #160
+# Shift under term #20 to state #158
+# Current token is Token - [Id =  40, lexema = ':', line = 10, column = 14]
+# Reduce with prod #4 [NT=2, SZ=0]
+# Reduce rule: top state 158, lhs sym 2 -> state 166
+# Goto state #166
+# Reduce with prod #73 [NT=33, SZ=1]
+# Reduce rule: top state 158, lhs sym 33 -> state 165
+# Goto state #165
+# Shift under term #40 to state #167
+# Current token is Token - [Id =  13, lexema = 'booleano', line = 10, column = 16]
+# Shift under term #13 to state #172
+# Current token is Token - [Id =  41, lexema = ';', line = 10, column = 24]
+# Reduce with prod #96 [NT=12, SZ=1]
+# Reduce rule: top state 167, lhs sym 12 -> state 170
+# Goto state #170
+# Reduce with prod #40 [NT=11, SZ=4]
+# Reduce rule: top state 160, lhs sym 11 -> state 161
+# Goto state #161
+# Shift under term #41 to state #162
+# Current token is Token - [Id =  20, lexema = 'resultadoLogico', line = 11, column = 3]
+# Reduce with prod #38 [NT=10, SZ=3]
+# Reduce rule: top state 18, lhs sym 10 -> state 160
+# Goto state #160
+# Shift under term #20 to state #158
+# Current token is Token - [Id =  40, lexema = ':', line = 11, column = 19]
+# Reduce with prod #4 [NT=2, SZ=0]
+# Reduce rule: top state 158, lhs sym 2 -> state 166
+# Goto state #166
+# Reduce with prod #73 [NT=33, SZ=1]
+# Reduce rule: top state 158, lhs sym 33 -> state 165
+# Goto state #165
+# Shift under term #40 to state #167
+# Current token is Token - [Id =  13, lexema = 'booleano', line = 11, column = 21]
+# Shift under term #13 to state #172
+# Current token is Token - [Id =  41, lexema = ';', line = 11, column = 29]
+# Reduce with prod #96 [NT=12, SZ=1]
+# Reduce rule: top state 167, lhs sym 12 -> state 170
+# Goto state #170
+# Reduce with prod #40 [NT=11, SZ=4]
+# Reduce rule: top state 160, lhs sym 11 -> state 161
+# Goto state #161
+# Shift under term #41 to state #162
+# Current token is Token - [Id =  38, lexema = 'comienzo', line = 14, column = 1]
+# Reduce with prod #38 [NT=10, SZ=3]
+# Reduce rule: top state 18, lhs sym 10 -> state 160
+# Goto state #160
+# Reduce with prod #28 [NT=5, SZ=2]
+# Reduce rule: top state 12, lhs sym 5 -> state 16
+# Goto state #16
+# Reduce with prod #24 [NT=4, SZ=2]
+# Reduce rule: top state 3, lhs sym 4 -> state 12
+# Goto state #12
+# Shift under term #38 to state #20
+# Current token is Token - [Id =  20, lexema = 'suma', line = 15, column = 2]
+# Reduce with prod #4 [NT=2, SZ=0]
+# Reduce rule: top state 20, lhs sym 2 -> state 22
+# Goto state #22
+# Reduce with prod #11 [NT=35, SZ=1]
+# Reduce rule: top state 20, lhs sym 35 -> state 21
+# Goto state #21
+# Shift under term #20 to state #29
+# Current token is Token - [Id =  45, lexema = '=', line = 15, column = 7]
+# Shift under term #45 to state #118
+# Current token is Token - [Id =  20, lexema = 'a', line = 15, column = 9]
+# Shift under term #20 to state #129
+# Current token is Token - [Id =  33, lexema = '+', line = 15, column = 11]
+# Reduce with prod #76 [NT=23, SZ=1]
+# Reduce rule: top state 118, lhs sym 23 -> state 44
+# Goto state #44
+# Shift under term #33 to state #47
+# Current token is Token - [Id =  20, lexema = 'b', line = 15, column = 13]
+# Reduce with prod #79 [NT=24, SZ=1]
+# Reduce rule: top state 44, lhs sym 24 -> state 45
+# Goto state #45
+# Shift under term #20 to state #49
+# Current token is Token - [Id =  41, lexema = ';', line = 15, column = 14]
+# Reduce with prod #76 [NT=23, SZ=1]
+# Reduce rule: top state 45, lhs sym 23 -> state 53
+# Goto state #53
+# Reduce with prod #61 [NT=21, SZ=3]
+# Reduce rule: top state 118, lhs sym 21 -> state 124
+# Goto state #124
+# Reduce with prod #50 [NT=27, SZ=3]
+# Reduce rule: top state 21, lhs sym 27 -> state 30
+# Goto state #30
+# Reduce with prod #12 [NT=17, SZ=1]
+# Reduce rule: top state 21, lhs sym 17 -> state 34
+# Goto state #34
+# Shift under term #41 to state #117
+# Current token is Token - [Id =  20, lexema = 'resultado', line = 16, column = 2]
+# Reduce with prod #10 [NT=35, SZ=3]
+# Reduce rule: top state 20, lhs sym 35 -> state 21
+# Goto state #21
+# Shift under term #20 to state #29
+# Current token is Token - [Id =  45, lexema = '=', line = 16, column = 12]
+# Shift under term #45 to state #118
+# Current token is Token - [Id =  20, lexema = 'suma', line = 16, column = 14]
+# Shift under term #20 to state #129
+# Current token is Token - [Id =  30, lexema = '*', line = 16, column = 19]
+# Reduce with prod #76 [NT=23, SZ=1]
+# Reduce rule: top state 118, lhs sym 23 -> state 44
+# Goto state #44
+# Shift under term #30 to state #46
+# Current token is Token - [Id =  9, lexema = '10', line = 16, column = 21]
+# Reduce with prod #80 [NT=24, SZ=1]
+# Reduce rule: top state 44, lhs sym 24 -> state 45
+# Goto state #45
+# Shift under term #9 to state #31
+# Current token is Token - [Id =  33, lexema = '+', line = 16, column = 24]
+# Reduce with prod #77 [NT=23, SZ=1]
+# Reduce rule: top state 45, lhs sym 23 -> state 53
+# Goto state #53
+# Reduce with prod #61 [NT=21, SZ=3]
+# Reduce rule: top state 118, lhs sym 21 -> state 124
+# Goto state #124
+# Shift under term #33 to state #47
+# Current token is Token - [Id =  9, lexema = '4', line = 16, column = 26]
+# Reduce with prod #79 [NT=24, SZ=1]
+# Reduce rule: top state 124, lhs sym 24 -> state 55
+# Goto state #55
+# Shift under term #9 to state #31
+# Current token is Token - [Id =  41, lexema = ';', line = 16, column = 27]
+# Reduce with prod #77 [NT=23, SZ=1]
+# Reduce rule: top state 55, lhs sym 23 -> state 57
+# Goto state #57
+# Reduce with prod #60 [NT=21, SZ=3]
+# Reduce rule: top state 118, lhs sym 21 -> state 124
+# Goto state #124
+# Reduce with prod #50 [NT=27, SZ=3]
+# Reduce rule: top state 21, lhs sym 27 -> state 30
+# Goto state #30
+# Reduce with prod #12 [NT=17, SZ=1]
+# Reduce rule: top state 21, lhs sym 17 -> state 34
+# Goto state #34
+# Shift under term #41 to state #117
+# Current token is Token - [Id =  37, lexema = 'escribir', line = 18, column = 2]
+# Reduce with prod #10 [NT=35, SZ=3]
+# Reduce rule: top state 20, lhs sym 35 -> state 21
+# Goto state #21
+# Shift under term #37 to state #37
+# Current token is Token - [Id =  26, lexema = '(', line = 18, column = 10]
+# Shift under term #26 to state #67
+# Current token is Token - [Id =  20, lexema = 'suma', line = 18, column = 11]
+# Shift under term #20 to state #73
+# Current token is Token - [Id =  29, lexema = ')', line = 18, column = 15]
+# Reduce with prod #101 [NT=30, SZ=1]
+# Reduce rule: top state 67, lhs sym 30 -> state 70
+# Goto state #70
+# Reduce with prod #4 [NT=2, SZ=0]
+# Reduce rule: top state 70, lhs sym 2 -> state 77
+# Goto state #77
+# Reduce with prod #106 [NT=34, SZ=1]
+# Reduce rule: top state 70, lhs sym 34 -> state 76
+# Goto state #76
+# Shift under term #29 to state #78
+# Current token is Token - [Id =  41, lexema = ';', line = 18, column = 16]
+# Reduce with prod #64 [NT=29, SZ=5]
+# Reduce rule: top state 21, lhs sym 29 -> state 43
+# Goto state #43
+# Reduce with prod #16 [NT=17, SZ=1]
+# Reduce rule: top state 21, lhs sym 17 -> state 34
+# Goto state #34
+# Shift under term #41 to state #117
+# Current token is Token - [Id =  37, lexema = 'escribir', line = 19, column = 2]
+# Reduce with prod #10 [NT=35, SZ=3]
+# Reduce rule: top state 20, lhs sym 35 -> state 21
+# Goto state #21
+# Shift under term #37 to state #37
+# Current token is Token - [Id =  26, lexema = '(', line = 19, column = 10]
+# Shift under term #26 to state #67
+# Current token is Token - [Id =  20, lexema = 'resultado', line = 19, column = 11]
+# Shift under term #20 to state #73
+# Current token is Token - [Id =  29, lexema = ')', line = 19, column = 20]
+# Reduce with prod #101 [NT=30, SZ=1]
+# Reduce rule: top state 67, lhs sym 30 -> state 70
+# Goto state #70
+# Reduce with prod #4 [NT=2, SZ=0]
+# Reduce rule: top state 70, lhs sym 2 -> state 77
+# Goto state #77
+# Reduce with prod #106 [NT=34, SZ=1]
+# Reduce rule: top state 70, lhs sym 34 -> state 76
+# Goto state #76
+# Shift under term #29 to state #78
+# Current token is Token - [Id =  41, lexema = ';', line = 19, column = 21]
+# Reduce with prod #64 [NT=29, SZ=5]
+# Reduce rule: top state 21, lhs sym 29 -> state 43
+# Goto state #43
+# Reduce with prod #16 [NT=17, SZ=1]
+# Reduce rule: top state 21, lhs sym 17 -> state 34
+# Goto state #34
+# Shift under term #41 to state #117
+# Current token is Token - [Id =  20, lexema = 'conjuncion', line = 21, column = 2]
+# Reduce with prod #10 [NT=35, SZ=3]
+# Reduce rule: top state 20, lhs sym 35 -> state 21
+# Goto state #21
+# Shift under term #20 to state #29
+# Current token is Token - [Id =  45, lexema = '=', line = 21, column = 13]
+# Shift under term #45 to state #118
+# Current token is Token - [Id =  27, lexema = 'cierto', line = 21, column = 15]
+# Shift under term #27 to state #24
+# Current token is Token - [Id =  39, lexema = 'y', line = 21, column = 22]
+# Reduce with prod #112 [NT=28, SZ=1]
+# Reduce rule: top state 118, lhs sym 28 -> state 131
+# Goto state #131
+# Reduce with prod #84 [NT=25, SZ=1]
+# Reduce rule: top state 118, lhs sym 25 -> state 25
+# Goto state #25
+# Shift under term #39 to state #90
+# Current token is Token - [Id =  24, lexema = 'falso', line = 21, column = 24]
+# Reduce with prod #87 [NT=26, SZ=1]
+# Reduce rule: top state 25, lhs sym 26 -> state 141
+# Goto state #141
+# Shift under term #24 to state #32
+# Current token is Token - [Id =  41, lexema = ';', line = 21, column = 29]
+# Reduce with prod #113 [NT=28, SZ=1]
+# Reduce rule: top state 141, lhs sym 28 -> state 40
+# Goto state #40
+# Reduce with prod #84 [NT=25, SZ=1]
+# Reduce rule: top state 141, lhs sym 25 -> state 142
+# Goto state #142
+# Reduce with prod #63 [NT=20, SZ=3]
+# Reduce rule: top state 118, lhs sym 20 -> state 130
+# Goto state #130
+# Reduce with prod #51 [NT=27, SZ=3]
+# Reduce rule: top state 21, lhs sym 27 -> state 30
+# Goto state #30
+# Reduce with prod #12 [NT=17, SZ=1]
+# Reduce rule: top state 21, lhs sym 17 -> state 34
+# Goto state #34
+# Shift under term #41 to state #117
+# Current token is Token - [Id =  20, lexema = 'resultadoLogico', line = 22, column = 2]
+# Reduce with prod #10 [NT=35, SZ=3]
+# Reduce rule: top state 20, lhs sym 35 -> state 21
+# Goto state #21
+# Shift under term #20 to state #29
+# Current token is Token - [Id =  45, lexema = '=', line = 22, column = 18]
+# Shift under term #45 to state #118
+# Current token is Token - [Id =  20, lexema = 'conjuncion', line = 22, column = 20]
+# Shift under term #20 to state #129
+# Current token is Token - [Id =  39, lexema = 'y', line = 22, column = 31]
+# Reduce with prod #85 [NT=25, SZ=1]
+# Reduce rule: top state 118, lhs sym 25 -> state 25
+# Goto state #25
+# Shift under term #39 to state #90
+# Current token is Token - [Id =  26, lexema = '(', line = 22, column = 33]
+# Reduce with prod #87 [NT=26, SZ=1]
+# Reduce rule: top state 25, lhs sym 26 -> state 141
+# Goto state #141
+# Shift under term #26 to state #99
+# Current token is Token - [Id =  20, lexema = 'a', line = 22, column = 34]
+# Shift under term #20 to state #84
+# Current token is Token - [Id =  44, lexema = '<', line = 22, column = 36]
+# Reduce with prod #85 [NT=25, SZ=1]
+# Reduce rule: top state 99, lhs sym 25 -> state 25
+# Goto state #25
+# Shift under term #44 to state #89
+# Current token is Token - [Id =  20, lexema = 'b', line = 22, column = 38]
+# Reduce with prod #89 [NT=26, SZ=1]
+# Reduce rule: top state 25, lhs sym 26 -> state 141
+# Goto state #141
+# Shift under term #20 to state #84
+# Current token is Token - [Id =  29, lexema = ')', line = 22, column = 39]
+# Reduce with prod #85 [NT=25, SZ=1]
+# Reduce rule: top state 141, lhs sym 25 -> state 142
+# Goto state #142
+# Reduce with prod #63 [NT=20, SZ=3]
+# Reduce rule: top state 99, lhs sym 20 -> state 101
+# Goto state #101
+# Shift under term #29 to state #102
+# Current token is Token - [Id =  41, lexema = ';', line = 22, column = 40]
+# Reduce with prod #83 [NT=25, SZ=3]
+# Reduce rule: top state 141, lhs sym 25 -> state 142
+# Goto state #142
+# Reduce with prod #63 [NT=20, SZ=3]
+# Reduce rule: top state 118, lhs sym 20 -> state 130
+# Goto state #130
+# Reduce with prod #51 [NT=27, SZ=3]
+# Reduce rule: top state 21, lhs sym 27 -> state 30
+# Goto state #30
+# Reduce with prod #12 [NT=17, SZ=1]
+# Reduce rule: top state 21, lhs sym 17 -> state 34
+# Goto state #34
+# Shift under term #41 to state #117
+# Current token is Token - [Id =  37, lexema = 'escribir', line = 24, column = 2]
+# Reduce with prod #10 [NT=35, SZ=3]
+# Reduce rule: top state 20, lhs sym 35 -> state 21
+# Goto state #21
+# Shift under term #37 to state #37
+# Current token is Token - [Id =  26, lexema = '(', line = 24, column = 10]
+# Shift under term #26 to state #67
+# Current token is Token - [Id =  20, lexema = 'conjuncion', line = 24, column = 11]
+# Shift under term #20 to state #73
+# Current token is Token - [Id =  29, lexema = ')', line = 24, column = 21]
+# Reduce with prod #101 [NT=30, SZ=1]
+# Reduce rule: top state 67, lhs sym 30 -> state 70
+# Goto state #70
+# Reduce with prod #4 [NT=2, SZ=0]
+# Reduce rule: top state 70, lhs sym 2 -> state 77
+# Goto state #77
+# Reduce with prod #106 [NT=34, SZ=1]
+# Reduce rule: top state 70, lhs sym 34 -> state 76
+# Goto state #76
+# Shift under term #29 to state #78
+# Current token is Token - [Id =  41, lexema = ';', line = 24, column = 22]
+# Reduce with prod #64 [NT=29, SZ=5]
+# Reduce rule: top state 21, lhs sym 29 -> state 43
+# Goto state #43
+# Reduce with prod #16 [NT=17, SZ=1]
+# Reduce rule: top state 21, lhs sym 17 -> state 34
+# Goto state #34
+# Shift under term #41 to state #117
+# Current token is Token - [Id =  37, lexema = 'escribir', line = 25, column = 2]
+# Reduce with prod #10 [NT=35, SZ=3]
+# Reduce rule: top state 20, lhs sym 35 -> state 21
+# Goto state #21
+# Shift under term #37 to state #37
+# Current token is Token - [Id =  26, lexema = '(', line = 25, column = 10]
+# Shift under term #26 to state #67
+# Current token is Token - [Id =  20, lexema = 'resultadoLogico', line = 25, column = 11]
+# Shift under term #20 to state #73
+# Current token is Token - [Id =  29, lexema = ')', line = 25, column = 26]
+# Reduce with prod #101 [NT=30, SZ=1]
+# Reduce rule: top state 67, lhs sym 30 -> state 70
+# Goto state #70
+# Reduce with prod #4 [NT=2, SZ=0]
+# Reduce rule: top state 70, lhs sym 2 -> state 77
+# Goto state #77
+# Reduce with prod #106 [NT=34, SZ=1]
+# Reduce rule: top state 70, lhs sym 34 -> state 76
+# Goto state #76
+# Shift under term #29 to state #78
+# Current token is Token - [Id =  41, lexema = ';', line = 25, column = 27]
+# Reduce with prod #64 [NT=29, SZ=5]
+# Reduce rule: top state 21, lhs sym 29 -> state 43
+# Goto state #43
+# Reduce with prod #16 [NT=17, SZ=1]
+# Reduce rule: top state 21, lhs sym 17 -> state 34
+# Goto state #34
+# Shift under term #41 to state #117
+# Current token is Token - [Id =  8, lexema = 'fin', line = 29, column = 1]
+# Reduce with prod #10 [NT=35, SZ=3]
+# Reduce rule: top state 20, lhs sym 35 -> state 21
+# Goto state #21
+# Shift under term #8 to state #41
+# Current token is Token - [Id =  35, lexema = '.', line = 29, column = 4]
+# Shift under term #35 to state #66
+# Current token is #0
+# Reduce with prod #9 [NT=15, SZ=4]
+# Reduce rule: top state 12, lhs sym 15 -> state 14
+# Goto state #14
+# Reduce with prod #3 [NT=1, SZ=3]
+# Reduce rule: top state 2, lhs sym 1 -> state 4
+# Goto state #4
+# Reduce with prod #2 [NT=0, SZ=2]
+# Reduce rule: top state 0, lhs sym 0 -> state 1
+# Goto state #1
+# Shift under term #0 to state #244
+# Current token is #0
+# Reduce with prod #0 [NT=0, SZ=2]
+# Reduce rule: top state 0, lhs sym 0 -> state 1
+# Goto state #1

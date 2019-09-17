@@ -1,0 +1,27 @@
+# programa con operaciones
+programa cinco:
+	tipos
+		tvector = vector [1..5] de entero;
+	variables
+		v : tvector;
+		a: entero;
+
+
+comienzo
+
+	v[1] = 1;
+	v[3] = 3;
+	v[5] = 5;
+
+	v[2] = v[1] + 1;
+
+	v[4] = v[3] * v[5] + 10;
+
+
+	a = v[v[3]];
+
+	escribir(a);
+	
+	
+
+fin.

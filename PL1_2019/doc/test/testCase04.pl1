@@ -1,0 +1,29 @@
+# programa con operaciones
+programa cuatro:
+	constantes
+		a = 10;
+		b = 20;
+	variables
+		suma : entero;
+		resultado : entero;
+		
+		conjuncion : booleano;
+		resultadoLogico : booleano;
+
+
+comienzo
+	suma = a + b;
+	resultado = suma * 10 + 4;
+	
+	escribir(suma);
+	escribir(resultado);
+
+	conjuncion = cierto y falso;
+	resultadoLogico = conjuncion y (a < b);
+	
+	escribir(conjuncion);
+	escribir(resultadoLogico);
+	
+	
+
+fin.

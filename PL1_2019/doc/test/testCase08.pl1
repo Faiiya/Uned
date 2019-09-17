@@ -1,0 +1,11 @@
+# programa con bucle para
+programa ocho:
+	variables
+		i : entero;
+
+comienzo
+	para i en 0 .. 10:
+		escribir(i);
+
+	fin para;
+fin.

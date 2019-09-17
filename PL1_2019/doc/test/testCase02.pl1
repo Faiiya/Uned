@@ -1,0 +1,9 @@
+# programa con salida de texto
+programa dos:
+
+
+comienzo
+	escribir("hola");
+	escribir();
+	escribir("mundo");
+fin.

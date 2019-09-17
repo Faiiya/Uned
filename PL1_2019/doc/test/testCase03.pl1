@@ -1,0 +1,6 @@
+# programa que escribe una suma
+programa tres:
+
+comienzo
+	escribir(8 + 2);
+fin.

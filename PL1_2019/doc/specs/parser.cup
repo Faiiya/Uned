@@ -1,0 +1,320 @@
+ package compiler.syntax;
+
+// Declaraci�n de importaciones 
+//(No modificar las proporcionadas. Se pueden agregar mas)
+
+import java_cup.runtime.Symbol;
+import java.util.*;
+
+import es.uned.lsi.compiler.lexical.*;
+import es.uned.lsi.compiler.code.*;
+import es.uned.lsi.compiler.intermediate.*;
+import es.uned.lsi.compiler.semantic.*;
+import es.uned.lsi.compiler.semantic.symbol.*;
+import es.uned.lsi.compiler.semantic.type.*;
+import es.uned.lsi.compiler.syntax.*;
+
+import compiler.CompilerContext;
+import compiler.lexical.*;
+import compiler.syntax.nonTerminal.*;
+import compiler.semantic.*;
+import compiler.semantic.symbol.*;
+import compiler.semantic.type.*;
+import compiler.intermediate.*;
+import compiler.code.*;
+
+// Declaraci�n del c�digo de usuario
+
+action code {:
+	
+	SyntaxErrorManager   syntaxErrorManager   = CompilerContext.getSyntaxErrorManager();
+	SemanticErrorManager semanticErrorManager = CompilerContext.getSemanticErrorManager ();
+	ScopeManagerIF       scopeManager         = CompilerContext.getScopeManager ();
+	FinalCodeFactoryIF   finalCodeFactory     = CompilerContext.getFinalCodeFactory ();
+
+:}	
+
+parser code {:
+	SyntaxErrorManager syntaxErrorManager = CompilerContext.getSyntaxErrorManager();
+	
+	public void syntax_error(Symbol symbol)
+	{ 
+	    Token token = (Token) symbol.value;
+	    syntaxErrorManager.syntaxError ("Error sintactico", token);	    
+	}
+		
+	public void unrecovered_syntax_error(java_cup.runtime.Symbol symbol)
+	{	
+	    Token token = (Token) symbol.value;
+	    syntaxErrorManager.syntaxFatalError ("Error fatal", token);
+	}
+:}
+
+// Declaraci�n de terminales (Ejemplo)
+
+terminal Token DE;
+terminal Token ENTONCES;
+terminal Token NO;
+terminal Token DEVOLVER;
+terminal Token PROGRAMA;
+terminal Token ENTERO;
+terminal Token FIN;
+terminal Token NUM;
+terminal Token WHILE;
+terminal Token PROCEDIMIENTO;
+terminal Token PARA;
+terminal Token BOOLEANO;
+terminal Token SI;
+terminal Token LANECOMMENT;
+terminal Token VECTOR;
+terminal Token FUNCION;
+terminal Token IF;
+terminal Token STRING;
+terminal Token ID;
+terminal Token EQUALS;
+terminal Token SINO;
+terminal Token VARIABLES;
+terminal Token FALSO;
+terminal Token VAR;
+terminal Token PARL;
+terminal Token CIERTO;
+terminal Token EN;
+terminal Token PARR;
+terminal Token MULT;
+terminal Token SUBPROGRAMAS;
+terminal Token TIPOS;
+terminal Token PLUS;
+terminal Token MINUS;
+terminal Token PUNTO;
+terminal Token CONSTANTES;
+terminal Token ESCRIBIR;
+terminal Token COMIENZO;
+terminal Token Y;
+terminal Token DOSP;
+terminal Token PCOMA,PUNTOP,COMA;
+terminal Token LESS;
+terminal Token ASIGN;
+terminal Token BRACKETL,BRACKETR;
+terminal Token FINSI;
+
+// palabras clave
+// ...
+
+
+// Declaraci�n de no terminales
+// no modificar los propuestos
+
+non terminal  			program;
+non terminal Axiom		axiom;
+non terminal  			epsilon;
+non terminal			declaracionPrograma, declaraciones, declaracion;
+non terminal			constantes,constante;
+non terminal			tipos,tipo;
+non terminal			variables,variable,valorVAR;
+non terminal			subprogramas,subprograma;
+non terminal			main;
+non terminal			sentencias,sentencia;
+non terminal			expresiones,expresion;
+non terminal			expLogica,expArit,expVector;
+non terminal			valexparit,symbolexparit;
+non terminal			valexplogica,symbolexplogica;
+non terminal			asignacion;
+non terminal			boolean;
+non terminal			funcion,valfuncion;
+non terminal			listavalorsubfuncion,listavalor,listaID,listavalfuncion;
+non terminal			codigo,tipoprimitivo,devolver;
+non terminal 			exp,valorexp;
+non terminal			valor,vector,valorvector;
+non terminal			subfuncion,subprocedimiento;
+non terminal			sentenciasi,sentenciapara;
+// ...
+
+
+// Declaraci�n de relaciones de precedencia
+////precedence left     PLUS,
+////                    MINUS;
+// ...
+precedence left LESS,EQUALS;
+precedence left PLUS,MINUS;
+precedence right NO;
+precedence left MULT, Y;
+precedence left ASIGN;
+precedence left PARL,PARR,BRACKETL,BRACKETR;
+
+
+start with program;
+
+program ::= 
+  {: 
+        syntaxErrorManager.syntaxInfo ("Starting parsing..."); 
+   :}
+  axiom:ax
+  {: 
+  		// No modificar esta estructura, aunque se pueden añadir más acciones semánticas
+  		// Para la entrega de febrero pueden comentarse las dos sentencias siguientes:
+  		// List intermediateCode = ax.getIntermediateCode ();
+  		// finalCodeFactory.create (intermediateCode);
+  		// En caso de no comentarse las sentencias anteriores puede generar una excepcion
+  		// en las llamadas a cupTest en la entrega de Febrero. Esto es debido a que 
+  		// aún no se tendrá implementada la generación de código intermedio ni final.
+  		// Para la entrega de Junio deberán descomentarse y usarse..
+  		// Produced by MV tools 2019-08-01 18:15:29
+
+  		
+  		syntaxErrorManager.syntaxInfo ("Parsing process ended.");
+   :};
+
+axiom ::= declaracionPrograma declaraciones main;
+
+epsilon ::=;
+
+declaracionPrograma ::= PROGRAMA:p ID:i DOSP  {: System.out.println("[SYNTAX INFO] - declaracion del programa: "+p.getLexema()+" "+i.getLexema()+":"); :} 
+					| PROGRAMA error{:syntaxErrorManager.syntaxInfo("[SYNTAX ERROR] Se esperaba un identificador");:} DOSP
+					| PROGRAMA ID error{:syntaxErrorManager.syntaxInfo("[SYNTAX ERROR] Se esperaban dos puntos");:};
+
+main				::= COMIENZO codigo FIN PUNTO;
+
+codigo				::= codigo sentencia PCOMA
+					| epsilon;
+			
+sentencia			::= asignacion
+					| expLogica
+					| expArit
+					| expVector
+					| funcion
+					| sentenciasi
+					| sentenciapara;
+
+sentenciasi			::= SI expLogica ENTONCES DOSP codigo FINSI
+					| SI PARL expLogica PARR ENTONCES DOSP codigo FINSI
+					| SI expLogica ENTONCES DOSP codigo SINO DOSP codigo FINSI
+					| SI PARL expLogica PARR ENTONCES DOSP codigo SINO DOSP codigo FINSI;
+
+sentenciapara		::= PARA ID EN NUM PUNTOP NUM DOSP codigo FIN PARA;
+
+
+declaraciones		::= declaraciones declaracion
+					| epsilon;
+
+declaracion			::= CONSTANTES constantes
+					| TIPOS tipos
+					| VARIABLES variables
+					| SUBPROGRAMAS subprogramas;
+
+// tipos de declaraciones
+constantes			::= constantes constante PCOMA
+					| constante PCOMA;
+					
+constante			::= ID ASIGN NUM
+					| ID ASIGN boolean;
+
+tipos				::= tipos tipo PCOMA
+					| tipo PCOMA;
+
+tipo				::= ID ASIGN VECTOR BRACKETL NUM PUNTOP NUM BRACKETR DE ENTERO
+					| ID ASIGN VECTOR BRACKETL NUM PUNTOP NUM BRACKETR DE BOOLEANO;
+
+variables			::= variables variable PCOMA
+					| variable PCOMA;
+				
+variable			::=ID listaID DOSP valorVAR;
+
+subprogramas		::= subprogramas subprograma
+					| subprograma;
+
+subprograma			::=FUNCION subfuncion
+					| PROCEDIMIENTO subprocedimiento;
+
+subfuncion			::= ID PARL listavalorsubfuncion PARR DOSP tipoprimitivo DOSP declaraciones COMIENZO codigo devolver FIN PCOMA;		
+
+devolver			::= DEVOLVER ID PCOMA
+					| DEVOLVER NUM PCOMA
+					| DEVOLVER boolean PCOMA;		
+
+subprocedimiento	::= ID PARL listavalorsubfuncion PARR DOSP declaraciones COMIENZO codigo FIN PCOMA;		
+
+// expresiones
+asignacion			::= ID ASIGN expArit
+					| ID ASIGN expLogica
+					| ID ASIGN expVector
+					| ID ASIGN funcion
+					| ID ASIGN valor
+					| vector ASIGN expArit
+					| vector ASIGN expLogica
+					| vector ASIGN expVector
+					| vector ASIGN funcion
+					| vector ASIGN valor;
+					
+expArit				::=  expArit symbolexparit valexparit
+					| valexparit symbolexparit valexparit;
+
+expLogica			::=  expLogica symbolexplogica valexplogica
+					| valexplogica symbolexplogica valexplogica;
+
+funcion				::= ESCRIBIR PARL valfuncion listavalfuncion PARR
+					| ID PARL valfuncion listavalfuncion PARR;
+					
+vector				::= ID BRACKETL valorvector BRACKETR;
+
+// valores y otros
+listavalorsubfuncion::= valor listavalor DOSP ENTERO
+					| valor listavalor DOSP BOOLEANO
+					| epsilon;
+					
+listavalor			::= COMA valor listavalor
+					| epsilon;
+
+listaID				::= COMA ID listaID
+					| epsilon;
+					
+valexparit			::= BRACKETL expArit BRACKETR
+					| PARL expArit PARR 
+					| ID
+					| NUM
+					| vector;
+					
+symbolexparit		::= PLUS
+					| MULT
+					| MINUS;
+					
+valexplogica		::= BRACKETL expLogica BRACKETR
+					| PARL expLogica PARR
+					| boolean
+					| ID
+					| vector;
+					
+symbolexplogica		::= Y
+					| NO
+					| LESS
+					| EQUALS;
+					
+valor				::= NUM
+					| ID
+					| vector
+					| boolean;
+					
+valorVAR			::=ENTERO
+					| BOOLEANO
+					| ID
+					| vector;
+					
+valfuncion			::= STRING
+					| NUM
+					| ID
+					| expArit
+					| vector
+					| epsilon;
+					
+listavalfuncion		::= COMA valfuncion listavalfuncion
+					| epsilon;
+										
+valorvector			::= vector
+					| NUM
+					| ID;
+
+tipoprimitivo		::=ENTERO
+					| BOOLEANO;	
+							
+boolean				::= CIERTO
+					| FALSO;
+

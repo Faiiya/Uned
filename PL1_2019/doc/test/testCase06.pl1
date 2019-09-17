@@ -1,0 +1,23 @@
+# programa con funcion
+programa seis:
+
+	variables 
+		c, d: entero;
+	subprogramas
+		funcion sumar (a,b : entero): entero:
+			variables suma: entero;
+		comienzo
+			suma = a + b;
+
+			devolver suma;
+		fin;
+
+
+comienzo
+	c = 5;
+	d = 18;
+	suma = sumar(c,d);
+
+	escribir(suma);
+
+fin.
