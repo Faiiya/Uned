@@ -9,6 +9,6 @@ Autor : Manuel Moreno
 ## SIDI
 [SIDI_2019](https://github.com/Faiiya/Uned/tree/master/SIDI_2019)
 ## DYASO
-[PED 1 2019 (mitop)]
-[PED 2 2019]
+[PED 1 2019 (mitop)](https://github.com/Faiiya/Uned/tree/master/Dyaso_2019/PED1_2019)
+[PED 2 2019](https://github.com/Faiiya/Uned/tree/master/Dyaso_2019/PED2_2019)
 
