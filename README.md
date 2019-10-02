@@ -12,17 +12,12 @@ Si no tienes git en tu equipo, puedes encontrar instrucciones para instalarlo en
 <h2 align="center">Como contribuir</h1>
 
 Para poder contribuir simplemente hay que seguir un par de sencillos pasos.
-- [Haz Fork del repositorio](https://github.com/Faiiya/Uned#haz-fork-del-repositorio)
-
-- [Clona el repositorio](https://github.com/Faiiya/Uned#lona-el-repositorio)
-
-- [Crea una rama](https://github.com/Faiiya/Uned#crea-una-rama)
-
-- [Haz cambios y confirmalos](https://github.com/Faiiya/Uned#haz-los-cambios-necesarios-y-confirma-commit-esos-cambios)
-
-- [Manda (Push) los cambios](https://github.com/Faiiya/Uned#manda-push-tus-cambios-a-github)
-
-- [Envia (Submit) los cambios](https://github.com/Faiiya/Uned#env%C3%ADa-submit-tus-cambios-para-ser-revisados)
+- Haz Fork del repositorio
+- Clona el repositorio
+- Crea una rama
+- Haz cambios y confirmalos
+- Manda (Push) los cambios
+- Envia (Submit) los cambios
 
 
 ### Haz fork del repositorio 
