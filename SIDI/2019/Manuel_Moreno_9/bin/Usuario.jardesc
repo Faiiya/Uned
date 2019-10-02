@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="Ped_SIDI_2019/Usuario.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/Ped_SIDI_2019/src/Usuario.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="true" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" mainClassHandleIdentifier="=Ped_SIDI_2019/src&lt;Usuario{Usuario.java[Usuario" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="true" exportOutputFolder="false">
+        <javaElement handleIdentifier="=Ped_SIDI_2019/src&lt;Exceptions"/>
+        <javaElement handleIdentifier="=Ped_SIDI_2019/src&lt;Common"/>
+        <file path="/Ped_SIDI_2019/src/Database.jardesc"/>
+        <javaElement handleIdentifier="=Ped_SIDI_2019/src&lt;Usuario"/>
+    </selectedElements>
+</jardesc>
