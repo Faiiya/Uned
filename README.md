@@ -3,6 +3,10 @@
 
 Compilacion de practicas de ingenieria informatica de la Uned.
 
+- [Como contribuir](https://github.com/Faiiya/Uned#contribuir)
+- [Lista de Asignaturas](https://github.com/Faiiya/Uned#asignaturas)
+
+
 Si no tienes git en tu equipo, puedes encontrar instrucciones para instalarlo en [este enlace]( https://help.github.com/articles/set-up-git/ ).
 
 <h2 align="center">Contribuir</h1>
@@ -58,8 +62,7 @@ git add tus-cambios
 tus cambios puedes ser por ejemplo una practica de una asignatura
 
 Para añadir una practica por favor añadidla dentro de la asignatura y el año correspondiente y utilizar
-el formato `Nombre_Apellido_Nota` la nota es opcional pero ayudara a las futuras personas a buscar practicas
-con buenas notas.
+el formato `Nombre_Apellido_Nota` la nota es opcional pero ayudara a las futuras personas a buscar practicas con buenas notas.
 
 Ahora haz un *commit* sobre estos cambios ejecutando el comando `git commit`:
 ```
@@ -81,12 +84,15 @@ Ahora envía la *pull request*.
 
 <h2 align="center">Asignaturas</h1>
 
-## DyASO
-[DyASO](https://github.com/Faiiya/Uned/tree/master/DyASO)
+## Primero
 
-## PL1
-[PL1](https://github.com/Faiiya/Uned/tree/master/PL1)
 
-## SIDI
-[SIDI](https://github.com/Faiiya/Uned/tree/master/SIDI)
+## Segundo
 
+
+## Tercero
+- [DyASO](https://github.com/Faiiya/Uned/tree/master/DyASO)
+- [PL1](https://github.com/Faiiya/Uned/tree/master/PL1)
+- [SIDI](https://github.com/Faiiya/Uned/tree/master/SIDI)
+
+## Cuarto
