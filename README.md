@@ -12,20 +12,20 @@ Si no tienes git en tu equipo, puedes encontrar instrucciones para instalarlo en
 <h2 align="center">Como contribuir</h1>
 
 Para poder contribuir simplemente hay que seguir un par de sencillos pasos.
-- Haz Fork del repositorio
-- Clona el repositorio
-- Crea una rama
-- Haz cambios y confirmalos
-- Manda (Push) los cambios
-- Envia (Submit) los cambios
+1. Haz Fork del repositorio
+2. Clona el repositorio
+3. Crea una rama
+4. Haz cambios y confirmalos
+5. Manda (Push) los cambios
+6. Envia (Submit) los cambios
 
 
-### Haz fork del repositorio 
+### 1. Haz fork del repositorio 
 
 Para ello simplemente clica en el boton de fork que hay en la parte superior de esta pagina. Asi crearas una copia de este repositorio en tu cuenta
 
 
-### clona el repositorio
+### 2. clona el repositorio
 
 Ahora que has hecho Fork al repositorio , ve a tu cuenta de github y abre el repositorio que acabas de forkear, clicla en el botton de clonar, luego clica en el boton de copiar al portapapeles
 
@@ -41,7 +41,7 @@ git clone https://github.com/USERNAME/Uned.git
 ```
 Donde USERNAME seria tu nombre de usuario
 
-### crea una rama
+### 3. crea una rama
 
 Cambia el directorio de tu ordenador al del repositorio (si no estas ya)
 
@@ -59,7 +59,7 @@ Por ejemplo:
 ```
 git checkout -b nueva-practica-sidi
 ```
-### Haz los cambios necesarios y confirma (*Commit*) esos cambios
+### 4. Haz los cambios necesarios y confirma (*Commit*) esos cambios
 
 Si vas al directorio del proyecto y ejecutas el comando  `git status`, verás si hay cambios.
 
@@ -77,7 +77,7 @@ Ahora haz un *commit* sobre estos cambios ejecutando el comando `git commit`:
 ```
 git commit -m "mensaje del commit"
 ```
-### Manda (*Push*) tus cambios a GitHub
+### 5. Manda (*Push*) tus cambios a GitHub
 
 Haz *push* de tus cambios usando el comando `git push`:
 ```
@@ -85,7 +85,7 @@ git push origin <añade-el-nombre-de-la-rama>
 ```
 Reemplaza `<añade-el-nombre-de-la-rama>` con el nombre de la rama que creaste anteriormente.
 
-### Envía (*Submit*) tus cambios para ser revisados
+### 6. Envía (*Submit*) tus cambios para ser revisados
 
 Si vas a tu repositorio en GitHub, verás un botón `Compare & pull request`. Haz click sobre este botón.
 
