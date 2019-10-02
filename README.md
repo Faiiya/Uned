@@ -2,12 +2,10 @@
 
 
 Compilacion de practicas de ingenieria informatica de la Uned.
-Autor : Manuel Moreno
 
 Si no tienes git en tu equipo, puedes encontrar instrucciones para instalarlo en [este enlace]( https://help.github.com/articles/set-up-git/ ).
 
-## Como contribuir
-
+<h2 align="center">Contribuir</h1>
 
 ### Haz fork del repositorio 
 
@@ -48,6 +46,40 @@ Por ejemplo:
 ```
 git checkout -b nueva-practica-sidi
 ```
+### Haz los cambios necesarios y confirma (*Commit*) esos cambios
+
+Si vas al directorio del proyecto y ejecutas el comando  `git status`, verás si hay cambios.
+
+Agrega esos cambios a la rama (*branch*) que creaste anteriormente usando el comando `git add`:
+
+```
+git add tus-cambios
+```
+tus cambios puedes ser por ejemplo una practica de una asignatura
+
+Para añadir una practica por favor añadidla dentro de la asignatura y el año correspondiente y utilizar
+el formato `Nombre_Apellido_Nota` la nota es opcional pero ayudara a las futuras personas a buscar practicas
+con buenas notas.
+
+Ahora haz un *commit* sobre estos cambios ejecutando el comando `git commit`:
+```
+git commit -m "mensaje del commit"
+```
+### Manda (*Push*) tus cambios a GitHub
+
+Haz *push* de tus cambios usando el comando `git push`:
+```
+git push origin <añade-el-nombre-de-la-rama>
+```
+Reemplaza `<añade-el-nombre-de-la-rama>` con el nombre de la rama que creaste anteriormente.
+
+### Envía (*Submit*) tus cambios para ser revisados
+
+Si vas a tu repositorio en GitHub, verás un botón `Compare & pull request`. Haz click sobre este botón.
+
+Ahora envía la *pull request*.
+
+<h2 align="center">Asignaturas</h1>
 
 ## DyASO
 [DyASO](https://github.com/Faiiya/Uned/tree/master/DyASO)
