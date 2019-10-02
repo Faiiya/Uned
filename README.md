@@ -56,5 +56,13 @@ git checkout -b nueva-practica-sidi
 [PL1](https://github.com/Faiiya/Uned/tree/master/PL1)
 
 ## SIDI
+<<<<<<< HEAD
 [SIDI](https://github.com/Faiiya/Uned/tree/master/SIDI)
+=======
+[SIDI_2019](https://github.com/Faiiya/Uned/tree/master/SIDI_2019)
+## DYASO
+[PED 1 2019 (mitop)](https://github.com/Faiiya/Uned/tree/master/Dyaso_2019/PED1_2019)
+
+[PED 2 2019](https://github.com/Faiiya/Uned/tree/master/Dyaso_2019/PED2_2019)
+>>>>>>> fd2a72dc4e31da0dd19221691fb03a9c8a48328f
 
