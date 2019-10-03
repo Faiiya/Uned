@@ -68,10 +68,10 @@ Agrega esos cambios a la rama (*branch*) que creaste anteriormente usando el com
 ```
 git add tus-cambios
 ```
-tus cambios puedes ser por ejemplo una practica de una asignatura
+tus cambios pueden ser por ejemplo una practica de una asignatura
 
 Para añadir una practica por favor añadidla dentro de la asignatura y el año correspondiente y utilizar
-el formato `Nombre_Apellido_Nota` la nota es opcional pero ayudara a las futuras personas a buscar practicas con buenas notas.
+el formato `<Nombre_asignatura>/<Año_practica>/<Nombre_Apellido_Nota>` la nota es opcional pero ayudara a las futuras personas a buscar practicas con buenas notas.
 
 Ahora haz un *commit* sobre estos cambios ejecutando el comando `git commit`:
 ```
