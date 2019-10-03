@@ -3,7 +3,7 @@
 
 Compilacion de practicas de ingenieria informatica de la Uned.
 
-- [Como contribuir](https://github.com/Faiiya/Uned#contribuir)
+- [Como contribuir](https://github.com/Faiiya/Uned/blob/master/CONTRIBUTING.md)
 - [Lista de Asignaturas](https://github.com/Faiiya/Uned#asignaturas)
 
 
