@@ -71,7 +71,16 @@ git add tus-cambios
 tus cambios pueden ser por ejemplo una practica de una asignatura
 
 Para añadir una practica por favor añadidla dentro de la asignatura y el año correspondiente y utilizar
-el formato `<Nombre_asignatura>/<Año_practica>/<Nombre_Apellido_Nota>` la nota es opcional pero ayudara a las futuras personas a buscar practicas con buenas notas.
+el formato 
+`[asignatura]/[Año_practica]_[PEC_numero]_[Nombre_Apellido_Nota]` 
+
+asignatura es el nombre de la asignatura, se utilizan las abreviaturas ejemplo `DyASO , SIDI , ...`
+
+El numero de la pec solo se utiliza si la asignatura tiene varias PEC, por ejemplo en Dyaso hay PEC1 y PEC2.
+
+El nombre y el apellido son para diferenciar las practicas de cada uno.
+
+la nota es opcional pero ayudara a las futuras personas a buscar practicas con buenas notas.
 
 Ahora haz un *commit* sobre estos cambios ejecutando el comando `git commit`:
 ```
